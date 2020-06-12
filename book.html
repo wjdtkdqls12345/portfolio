@@ -1,22 +1,22 @@
 <!doctype html>
+<html>
 <meta charset="utf-8">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <link rel="stylesheet" type="text/css" href="css/bookblock.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo4.css" />
+    <script src="js/modernizr.custom.js"></script>
     <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" src="extras/jquery.min.1.7.js"></script>
-    <script type="text/javascript" src="extras/jquery-ui-1.8.20.custom.min.js"></script>
-    <script type="text/javascript" src="extras/jquery.mousewheel.min.js"></script>
-    <script type="text/javascript" src="extras/modernizr.2.5.3.min.js"></script>
-    <script type="text/javascript" src="lib/hash.js"></script>
 </head>
 
 <body>
     <div id="main">
-        <img src="img/blank.jpg" alt="error" id="backgroundimg">
-        <h1 id="toptext">개발자 정상빈의 포트폴리오입니다.</h1>
         <div id="profilebody">
+            <h1 id="toptext">개발자 정상빈의 포트폴리오입니다.</h1>
+            <img src="img/background.png" alt="error" id="backgroundimg">
             <div id="maintext">
+                <img src="img/person.jpg" id="profilepicture">
                 <p>안녕하세요 풀스택 개발자로서 역량을 키워가고 있는 정상빈입니다.<br><br>
                     <img src="img/email.jpg" alt="error" class="icon"> &nbsp;wjdtkdqls12345@gmail.com<br>
                     <img src="img/kakao.png" alt="error" class="icon">&nbsp;&nbsp;justface<br>
@@ -31,7 +31,7 @@
                 <p id="historymiddle">2020.04.01 &nbsp;&nbsp;&nbsp;&nbsp;제이케이테크 입사</p>
                 <p id="historymiddle">2020.04.01 &nbsp;&nbsp;&nbsp;&nbsp;제이케이테크 입사</p>
             </div>
-            <hr id="vertical">
+            <!--<hr id="vertical">-->
             <div id="skills">
                 <p id="language" class="skill_title">언어</p>
                 <div class="skilldiv"><img src="img/c.jpg" alt="c">
@@ -64,239 +64,163 @@
                 <div class="skilldiv"> <img src="img/spring.png" alt="spring">
                     <p>초급</p>
                 </div>
-
             </div>
         </div>
     </div>
-    <!-- <div id="canvas">
-        <div id="book-zoom">
-            <div class="sample-docs">
-                <div ignore="1" class="tabs">
-                    <div class="left"> </div>
-                    <div class="right"> </div>
+    <div class="container">
+        <div class="bb-custom-wrapper">
+            <div id="bb-bookblock" class="bb-bookblock">
+                <div class="bb-item">
+                    <div class="bb-custom-firstpage">
+                        <h1>내용시작</h1>
+
+                    </div>
+                    <div class="bb-custom-side">
+                        <p>Pastry bear claw oat cake danish croissant jujubes danish. Wypas soufflé muffin. Liquorice powder pastry danish. Candy toffee gummi bears chocolate bar lollipop applicake chocolate cake danish brownie.</p>
+                    </div>
                 </div>
-                <div class="hard"></div>
-                <div class="hard"></div>
-                <div class="hard p29"></div>
-                <div class="hard p30"></div>
+                <div class="bb-item">
+                    <div class="bb-custom-side">
+                        <p>Soufflé tootsie roll jelly beans. Sweet icing croissant dessert bear claw. Brownie dessert cheesecake danish jelly pudding bear claw soufflé.</p>
+                    </div>
+                    <div class="bb-custom-side">
+                        <p>Candy canes lollipop macaroon marshmallow gummi bears tiramisu. Dessert croissant cupcake candy canes. Bear claw faworki faworki lemon drops. Faworki marzipan sugar plum jelly-o marzipan jelly-o.</p>
+                    </div>
+                </div>
+                <div class="bb-item">
+                    <div class="bb-custom-side">
+                        <p>Croissant pudding gingerbread gummi bears marshmallow halvah. Wafer donut croissant. Cookie muffin jelly beans pie croissant croissant candy canes jelly marshmallow.</p>
+                    </div>
+                    <div class="bb-custom-side">
+                        <p>Wafer donut caramels chocolate caramels sweet roll. Gummi bears powder candy chocolate cake gummi bears icing wafer cupcake. Brownie cotton candy pastry chocolate wypas.</p>
+                    </div>
+                </div>
+                <div class="bb-item">
+                    <div class="bb-custom-side">
+                        <p>Marzipan dragée candy canes chocolate cake. Soufflé faworki jelly gingerbread cupcake. Powder gummies applicake.</p>
+                    </div>
+                    <div class="bb-custom-side">
+                        <p>Cotton candy caramels tootsie roll soufflé powder lemon drops carrot cake danish. Cotton candy candy canes fruitcake muffin gingerbread. Jujubes soufflé gingerbread donut donut.</p>
+                    </div>
+                </div>
+                <div class="bb-item">
+                    <div class="bb-custom-side">
+                        <p>Jujubes fruitcake tiramisu liquorice chocolate cake. Carrot cake faworki donut soufflé oat cake tootsie roll. Fruitcake fruitcake cake sweet pie jelly beans. Chocolate cake candy jujubes oat cake toffee croissant muffin.</p>
+                    </div>
+                    <div class="bb-custom-side">
+                        <p>Chocolate bar tiramisu marzipan. Croissant soufflé croissant lollipop liquorice dragée chupa chups carrot cake. Liquorice lollipop halvah toffee lollipop.</p>
+                    </div>
+                </div>
             </div>
+
+            <nav>
+                <a id="bb-nav-first" href="#" class="bb-custom-icon bb-custom-icon-first">First page</a>
+                <a id="bb-nav-prev" href="#" class="bb-custom-icon bb-custom-icon-arrow-left">Previous</a>
+                <a id="bb-nav-next" href="#" class="bb-custom-icon bb-custom-icon-arrow-right">Next</a>
+                <a id="bb-nav-last" href="#" class="bb-custom-icon bb-custom-icon-last">Last page</a>
+            </nav>
+
         </div>
 
-
-       
     </div>
--->
 
-    <script type="text/javascript">
-        function loadApp() {
-
-            var flipbook = $('.sample-docs');
-
-            // Check if the CSS was already loaded
-
-            if (flipbook.width() == 0 || flipbook.height() == 0) {
-                setTimeout(loadApp, 10);
-                return;
-            }
-
-            // Mousewheel
-
-            $('#book-zoom').mousewheel(function(event, delta, deltaX, deltaY) {
-
-                var data = $(this).data(),
-                    step = 30,
-                    flipbook = $('.sample-docs'),
-                    actualPos = $('#slider').slider('value') * step;
-
-                if (typeof(data.scrollX) === 'undefined') {
-                    data.scrollX = actualPos;
-                    data.scrollPage = flipbook.turn('page');
-                }
-
-                data.scrollX = Math.min($("#slider").slider('option', 'max') * step,
-                    Math.max(0, data.scrollX + deltaX));
-
-                var actualView = Math.round(data.scrollX / step),
-                    page = Math.min(flipbook.turn('pages'), Math.max(1, actualView * 2 - 2));
-
-                if ($.inArray(data.scrollPage, flipbook.turn('view', page)) == -1) {
-                    data.scrollPage = page;
-                    flipbook.turn('page', page);
-                }
-
-                if (data.scrollTimer)
-                    clearInterval(data.scrollTimer);
-
-                data.scrollTimer = setTimeout(function() {
-                    data.scrollX = undefined;
-                    data.scrollPage = undefined;
-                    data.scrollTimer = undefined;
-                }, 1000);
-
-
-
-            });
-
-            // URIs
-
-            Hash.on('^page\/([0-9]*)$', {
-                yep: function(path, parts) {
-                    var page = parts[1];
-
-                    if (page !== undefined) {
-                        if ($('.sample-docs').turn('is'))
-                            $('.sample-docs').turn('page', page);
-                    }
-
-                },
-                nop: function(path) {
-
-                    if ($('.sample-docs').turn('is'))
-                        $('.sample-docs').turn('page', 1);
-                }
-            });
-
-            // Arrows
-
-            $(document).keydown(function(e) {
-
-                var previous = 37,
-                    next = 39;
-
-                switch (e.keyCode) {
-                    case previous:
-
-                        $('.sample-docs').turn('previous');
-
-                        break;
-                    case next:
-
-                        $('.sample-docs').turn('next');
-
-                        break;
-                }
-
-            });
-
-            // Create the flipbook
-
-            flipbook.turn({
-                elevation: 50,
-                acceleration: false,
-                gradients: true,
-                autoCenter: true,
-                duration: 1000,
-                pages: 30,
-                when: {
-
-                    turning: function(e, page, view) {
-
-                        var book = $(this),
-                            currentPage = book.turn('page'),
-                            pages = book.turn('pages');
-
-                        if (currentPage > 3 && currentPage < pages - 3) {
-                            if (page == 1) {
-                                book.turn('page', 2).turn('stop').turn('page', page);
-                                e.preventDefault();
-                                return;
-                            } else if (page == pages) {
-                                book.turn('page', pages - 1).turn('stop').turn('page', page);
-                                e.preventDefault();
-                                return;
-                            }
-                        } else if (page > 3 && page < pages - 3) {
-                            if (currentPage == 1) {
-                                book.turn('page', 2).turn('stop').turn('page', page);
-                                e.preventDefault();
-                                return;
-                            } else if (currentPage == pages) {
-                                book.turn('page', pages - 1).turn('stop').turn('page', page);
-                                e.preventDefault();
-                                return;
-                            }
-                        }
-
-                        Hash.go('page/' + page).update();
-
-                        if (page == 1 || page == pages)
-                            $('.sample-docs .tabs').hide();
-
-
-                    },
-
-                    turned: function(e, page, view) {
-
-                        var book = $(this);
-
-                        $('#slider').slider('value', getViewNumber(book, page));
-
-                        if (page != 1 && page != book.turn('pages'))
-                            $('.sample-docs .tabs').fadeIn(500);
-                        else
-                            $('.sample-docs .tabs').hide();
-
-                        book.turn('center');
-                        updateTabs();
-
-                    },
-
-                    start: function(e, pageObj) {
-
-                        moveBar(true);
-
-                    },
-
-                    end: function(e, pageObj) {
-
-                        var book = $(this);
-
-                        setTimeout(function() {
-                            $('#slider').slider('value', getViewNumber(book));
-                        }, 1);
-
-                        moveBar(false);
-
-                    },
-
-                    missing: function(e, pages) {
-
-                        for (var i = 0; i < pages.length; i++)
-                            addPage(pages[i], $(this));
-
-                    }
-                }
-            }).turn('page', 2);
-
-
-            $('#slider').slider('option', 'max', numberOfViews(flipbook));
-
-            flipbook.addClass('animated');
-
-
-            // Show canvas
-
-            $('#canvas').css({
-                visibility: 'visible'
-            });
-        }
-
-        // Hide canvas
-
-        $('#canvas').css({
-            visibility: 'hidden'
-        });
-
-        yepnope({
-            test: Modernizr.csstransforms,
-            yep: ['lib/turn.min.js', 'css/jquery.ui.css'],
-            nope: ['lib/turn.html4.min.js', 'css/jquery.ui.html4.css'],
-            both: ['css/docs.css', 'js/docs.js'],
-            complete: loadApp
-        });
-
-    </script>
-
+    <div id="bottom"></div>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/jquerypp.custom.js"></script>
+<script src="js/jquery.bookblock.js"></script>
+<script>
+    var Page = (function() {
 
-</html>
+        var config = {
+                $bookBlock: $('#bb-bookblock'),
+                $navNext: $('#bb-nav-next'),
+                $navPrev: $('#bb-nav-prev'),
+                $navFirst: $('#bb-nav-first'),
+                $navLast: $('#bb-nav-last')
+            },
+            init = function() {
+                config.$bookBlock.bookblock({
+                    speed: 1000,
+                    shadowSides: 0.8,
+                    shadowFlip: 0.4
+                });
+                initEvents();
+            },
+            initEvents = function() {
+
+                var $slides = config.$bookBlock.children();
+
+                // add navigation events
+                config.$navNext.on('click touchstart', function() {
+                    config.$bookBlock.bookblock('next');
+                    return false;
+                });
+
+                config.$navPrev.on('click touchstart', function() {
+                    config.$bookBlock.bookblock('prev');
+                    return false;
+                });
+
+                config.$navFirst.on('click touchstart', function() {
+                    config.$bookBlock.bookblock('first');
+                    return false;
+                });
+
+                config.$navLast.on('click touchstart', function() {
+                    config.$bookBlock.bookblock('last');
+                    return false;
+                });
+
+                // add swipe events
+                $slides.on({
+                    'swipeleft': function(event) {
+                        config.$bookBlock.bookblock('next');
+                        return false;
+                    },
+                    'swiperight': function(event) {
+                        config.$bookBlock.bookblock('prev');
+                        return false;
+                    }
+                });
+
+                // add keyboard events
+                $(document).keydown(function(e) {
+                    var keyCode = e.keyCode || e.which,
+                        arrow = {
+                            left: 37,
+                            up: 38,
+                            right: 39,
+                            down: 40
+                        };
+
+                    switch (keyCode) {
+                        case arrow.left:
+                            config.$bookBlock.bookblock('prev');
+                            break;
+                        case arrow.right:
+                            config.$bookBlock.bookblock('next');
+                            break;
+                    }
+                });
+            };
+
+        return {
+            init: init
+        };
+
+    })();
+
+    Page.init();
+
+    function dhide() {
+        $('.container').hide();
+    }
+
+    function dshow() {
+        $('.container').show();
+        $('html').animate({
+            scrollTop: $('body').height()
+        }, 1000);
+    }
+</script></html>
