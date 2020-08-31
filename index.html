@@ -1,10 +1,206 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css">
-        <body>
-        Hello World!
-        </body>
-    </head>
-</html>
+<meta charset="utf-8">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <link rel="stylesheet" type="text/css" href="css/bookblock.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo4.css" />
+    <script src="js/modernizr.custom.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="profilebody">
+        <h1 id="toptext">개발자 정상빈의 포트폴리오입니다.</h1>
+        <img src="img/background.png" alt="error" id="backgroundimg">
+        <div id="maintext">
+            <img src="img/person.jpg" id="profilepicture">
+            <p>안녕하세요 개발자로서 역량을 키워가고 있는 정상빈입니다.<br><br>
+                <img src="img/email.jpg" alt="error" class="icon"> <span id="contact">&nbsp;wjdtkdqls12345@gmail.com</span><br>
+                <img src="img/kakao.png" alt="error" class="icon"><span id="contact">&nbsp;&nbsp;justface<br></span>
+                <img src="img/instar.png" alt="error" class="icon"><span id="contact">&nbsp;&nbsp;a<br></span>
+            </p>
+        </div>
+    </div>
+    <div id="career">
+        <div id="history">
+            <p id="historytop">경력</p>
+            <p id="historymiddle">2020.04.01 &nbsp;&nbsp;&nbsp;&nbsp;제이케이테크 입사</p>
+        </div>
+        <div id="skills">
+            <p id="language" class="skill_title">언어</p>
+            <div class="skilldiv"><img src="img/c.jpg" alt="c">
+                <p>초급</p>
+            </div>
+            <div class="skilldiv"><img src="img/python.png" alt="python">
+                <p>초급</p>
+            </div>
+            <div class="skilldiv"><img src="img/html.png" alt="html">
+                <p>고급</p>
+            </div>
+            <div class="skilldiv"><img src="img/java.png" alt="java">
+                <p>고급</p>
+            </div>
+            <div class="skilldiv"> <img src="img/javascript.png" alt="javascript">
+                <p>고급</p>
+            </div>
+            <div class="skilldiv"> <img src="img/jquery.png" alt="jquery">
+                <p>고급</p>
+            </div>
+            <div class="skilldiv"> <img src="img/json.png" alt="json">
+                <p>중급</p>
+            </div>
+
+            <!--     데이터 베이스       -->
+            <p id="database" class="skill_title">데이터베이스</p>
+            <div class="skilldiv"> <img src="img/oracle.png" alt="oracle">
+                <p>고급</p>
+            </div>
+            <!--     프레임 워크     -->
+            <p id="framework" class="skill_title">프레임워크</p>
+            <div class="skilldiv"> <img src="img/spring.png" alt="spring">
+                <p>고급</p>
+            </div>
+        </div>
+    </div>
+    <div id="project">
+        <h1 id="projecttitle">프로젝트</h1><br>
+        <hr>
+        <div id="project1" class="projectdiv" onclick="clickproject()">1번 프로젝트</div>
+        <div id="project2" class="projectdiv" onclick="clickproject()">2번 프로젝트</div>
+        <div id="project3" class="projectdiv" onclick="clickproject()">3번 프로젝트</div>
+    </div>
+    <div class="container">
+        <div class="bb-custom-wrapper">
+            <div id="bb-bookblock" class="bb-bookblock">
+                <!--이 아이디 내의 내용을 바꾸기로-->
+
+                <div class="bb-item">
+                    <div class="bb-custom-firstpage">
+                        
+                    </div>
+                    <div class="bb-custom-side">
+                       
+                    </div>
+                </div>
+
+            
+            </div>
+
+            <nav>
+                <a id="bb-nav-first" href="#" class="bb-custom-icon bb-custom-icon-first">First page</a>
+                <a id="bb-nav-prev" href="#" class="bb-custom-icon bb-custom-icon-arrow-left">Previous</a>
+                <a id="bb-nav-next" href="#" class="bb-custom-icon bb-custom-icon-arrow-right">Next</a>
+                <a id="bb-nav-last" href="#" class="bb-custom-icon bb-custom-icon-last">Last page</a>
+            </nav>
+
+        </div>
+
+    </div>
+
+    <div id="bottom"></div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/jquerypp.custom.js"></script>
+<script src="js/jquery.bookblock.js"></script>
+
+<script>
+    $(document).ready(function(){
+         $('#bb-bookblock').html("<div class='bb-item' style='display: block'><div class='bb-custom-firstpage'><h1>프로젝트 클릭시 <br>나오는 부분입니다.</h1></div><div class='bb-custom-side'><p>조작 방법은 <br>1. 키보드 왼쪽 오른쪽<br>2. 아래에 보이는 버튼<br>3. 드래그<br>로 조작이 가능합니다.</p></div></div>");
+    });
+    
+    $('#project1').click(function() {
+        $('#bb-bookblock').html("");
+        $('#bb-bookblock').append("<div class='bb-item' style='display: block'><div class='bb-custom-firstpage'><h1>프로젝트 클릭시 <br>나오는 부분입니다1.</h1></div><div class='bb-custom-side'><p>조작 방법은 <br>1. 키보드 왼쪽 오른쪽<br>2. 아래에 보이는 버튼<br>3. 드래그<br>로 조작이 가능합니다.</p></div></div><div class='bb-item' style='display: none'><div class='bb-custom-firstpage'><h1>프로젝트 클릭시 <br>나오는 부분입니다2.</h1></div><div class='bb-custom-side'><p>조작 방법은 <br>1. 키보드 왼쪽 오른쪽<br>2. 아래에 보이는 버튼<br>3. 드래그<br>로 조작이 가능합니다.</p></div></div>");  
+        $('#bb-bookblock').append("<div class='bb-item' style='display: none'><div class='bb-custom-firstpage'><h1>프로젝트 클릭시 <br>나오는 부분입니다2.</h1></div><div class='bb-custom-side'><p>조작 방법은 <br>1. 키보드 왼쪽 오른쪽<br>2. 아래에 보이는 버튼<br>3. 드래그<br>로 조작이 가능합니다.</p></div></div>");
+    });
+    var Page = (function() {
+
+        var config = {
+                $bookBlock: $('#bb-bookblock'),
+                $navNext: $('#bb-nav-next'),
+                $navPrev: $('#bb-nav-prev'),
+                $navFirst: $('#bb-nav-first'),
+                $navLast: $('#bb-nav-last')
+            },
+            init = function() {
+                config.$bookBlock.bookblock({
+                    speed: 1000,
+                    shadowSides: 0.8,
+                    shadowFlip: 0.4
+                });
+                initEvents();
+            },
+            initEvents = function() {
+
+                var $slides = config.$bookBlock.children();
+
+                // add navigation events
+                config.$navNext.on('click touchstart', function() {
+                    config.$bookBlock.bookblock('next');
+                    return false;
+                });
+
+                config.$navPrev.on('click touchstart', function() {
+                    config.$bookBlock.bookblock('prev');
+                    return false;
+                });
+
+                config.$navFirst.on('click touchstart', function() {
+                    config.$bookBlock.bookblock('first');
+                    return false;
+                });
+
+                config.$navLast.on('click touchstart', function() {
+                    config.$bookBlock.bookblock('last');
+                    return false;
+                });
+
+                // add swipe events
+                $slides.on({
+                    'swipeleft': function(event) {
+                        config.$bookBlock.bookblock('next');
+                        return false;
+                    },
+                    'swiperight': function(event) {
+                        config.$bookBlock.bookblock('prev');
+                        return false;
+                    }
+                });
+
+                // add keyboard events
+                $(document).keydown(function(e) {
+                    var keyCode = e.keyCode || e.which,
+                        arrow = {
+                            left: 37,
+                            up: 38,
+                            right: 39,
+                            down: 40
+                        };
+
+                    switch (keyCode) {
+                        case arrow.left:
+                            config.$bookBlock.bookblock('prev');
+                            break;
+                        case arrow.right:
+                            config.$bookBlock.bookblock('next');
+                            break;
+                    }
+                });
+            };
+
+        return {
+            init: init
+        };
+
+    })();
+
+    Page.init();
+    
+        function clickproject() {
+            $('html').animate({
+                scrollTop: ($('#bottom').offset().top)
+            }, 1000);
+        }
+</script></html>
